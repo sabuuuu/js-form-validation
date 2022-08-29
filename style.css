@@ -1,0 +1,109 @@
+:root{
+    --bg-color : rgba(40,42,55,255);
+    --text-color : #fefeff;
+    --button-color : #1c90f4;
+    --input-color : #323645;
+    --link-color : #216bb2;
+    --other-text : #939aa8;
+}
+
+@font-face {
+    font-family: fbold;
+    src: url(font/fbold.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: fregular;
+    src: url(font/fregular.ttf);
+    font-weight: 400;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: fregular;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--link-color);
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--input-color);
+    padding: 20px 0 20px 40px;
+    width: 50%;
+    border-radius: 5px;
+}
+
+label{
+    margin-bottom: 5px;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#form button{
+    height: 45px;
+    width: 104%;
+    margin-top: 10px;
+    font-size: 15px;
+    font-family: fbold;
+    background-color: var(--button-color);
+    border: 0;
+    border-radius: 4px;
+}
+
+#form button:hover{
+    background-color: var(--link-color);
+    color: var(--text-color);
+}
+
+.input-control {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.input-control input {
+    border: 2px solid #f0f0f0;
+    font-family: fregular;
+	border-radius: 4px;
+    height: 20px;
+	padding: 10px;
+	width: 100%;
+}
+
+.input-control input:focus {
+    outline: 0;
+}
+
+.success input {
+    border-color: #09c372;
+}
+.input-control.error input {
+    border-color: #ff3860;
+}
+
+.input-control .error {
+    color: #fd6b88;
+    margin: 5px;
+    font-size: 12px;
+    height: 15px;
+    font-family: fbold;
+}
+
